@@ -15,8 +15,6 @@ Dataset: DEAM dataset
 
 import pandas as pd
 import os
-import pydub
-from pydub.utils import which
 import librosa
 
 
@@ -28,8 +26,6 @@ Data Preprocessing
 
 """
 # %% Data load
-pydub.AudioSegment.ffmpeg = which("ffmpeg")
-pydub.AudioSegment.ffprobe = which("ffprobe")
 
 # read CSV files
 AnV_dir_2to2000 = "annotations/annotations averaged per song/song_level/static_annotations_averaged_songs_1_2000.csv"
